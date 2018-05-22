@@ -1,0 +1,11 @@
+public String stringX(String str) {
+  String keepX = "";
+  if(str.length() < 2){
+    return str;
+  }
+  if(str.charAt(0) == 'x' || str.charAt(str.length() - 1) == 'x'){
+    keepX = "x";
+  }
+  str = str.replace("x","");
+  return keepX + str + keepX;
+}

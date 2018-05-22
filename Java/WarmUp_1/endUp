@@ -1,0 +1,14 @@
+public String endUp(String str) {
+  if(str.length() > 3){
+  int length = str.length();
+  String substring = str.substring(length-3,length);
+  String startOfString = str.substring(0,length-3);
+  substring = substring.toUpperCase();
+  str = startOfString + substring;
+  return str;
+  }
+  else{
+    return str.toUpperCase();
+  }
+  
+}

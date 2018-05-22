@@ -1,0 +1,17 @@
+public int stringMatch(String a, String b) {
+  String[] A = a.split("");
+		  String[] B = b.split("");
+		  int result = 0;
+		  int limit;
+		  if(B.length > A.length){
+		    limit = A.length;
+		  }else{
+		    limit = B.length;
+		  }
+		  for(int i = 1; i < limit; i++){
+		    if(A[i].equals(B[i]) && A[i-1].equals(B[i-1])){
+		      result++;
+		    }
+		  }
+		  return result;
+}

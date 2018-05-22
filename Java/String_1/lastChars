@@ -1,0 +1,15 @@
+public String lastChars(String a, String b) {
+  String start = "", end = "";
+  if(a.length() < 1){
+    start = "@";
+  }
+  else{
+    start = Character.toString(a.charAt(0));
+  }
+  if(b.length() < 1){
+    end = "@";
+  }else{
+    end = Character.toString(b.charAt(b.length()-1));
+  }
+  return start + end;
+}

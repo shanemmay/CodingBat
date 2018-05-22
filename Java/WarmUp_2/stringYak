@@ -1,0 +1,4 @@
+//This was so easy compared to the last one
+public String stringYak(String str) {
+  return str.replace("yak","");
+}

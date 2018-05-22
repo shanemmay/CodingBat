@@ -1,0 +1,13 @@
+public String stringTimes(String str, int n) {
+  String result = str;
+  if(n < 1){
+    return "";
+  }else if(n  == 1){
+    return str;
+  }
+
+  for(int i = 0; i < n - 1; i++){
+    str += result;
+  }
+  return str;
+}
